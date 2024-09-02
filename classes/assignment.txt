@@ -1,0 +1,15 @@
+HTML Structure:
+
+Create a simple navigation bar using the <nav>, <ul>, <li>, and <a> elements.
+Include 3-4 menu items, such as Home, About, Services, and Contact.
+CSS Styling:
+
+Style the navbar to have a background color and change the color of the text links.
+Add some padding around the links and ensure they are evenly spaced.
+Change the color of the links when the mouse hovers over them.
+
+CSS Styling:
+
+Style the navbar to have a background color and change the color of the text links.
+Add some padding around the links and ensure they are evenly spaced.
+Change the color of the links when the mouse hovers over them.
