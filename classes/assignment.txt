@@ -13,3 +13,7 @@ CSS Styling:
 Style the navbar to have a background color and change the color of the text links.
 Add some padding around the links and ensure they are evenly spaced.
 Change the color of the links when the mouse hovers over them.
+
+03/09/2024
+//write a function that calculates the age
+//of astudent by differenciating birth year and current year
