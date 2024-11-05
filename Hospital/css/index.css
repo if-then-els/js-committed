@@ -2,14 +2,17 @@ body{
     padding: 0;
     margin: 0;
     font-family:Verdana, Geneva, Tahoma, sans-serif;
+    color: white;
+    background:url(../images/360_F_571067620_JS5T5TkDtu3gf8Wqm78KoJRF1vobPvo6.jpg);
+    background-size: cover ;
 }
 
 nav{
      display: flex;
     flex-direction: row;
-    color: navy;
-    background-color: rgba(112, 1, 1, 0.192);
-    backdrop-filter: blur(10px);
+    color: rgb(255, 255, 255);
+     background-color: rgba(236, 236, 236, 0.226);
+   backdrop-filter: blur(10px);
     padding: 10px;
     justify-content: right; 
     list-style-type: none;
@@ -29,7 +32,7 @@ nav ul li{
 
 nav ul li a{
     text-decoration: none;
-    color: black;
+    color: rgb(255, 255, 255);
     font-size: 17px;
     font-weight: bold;
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -43,8 +46,9 @@ nav ul li a{
 
 
 nav a:hover{
-    color: blue;
-}
+    color: rgb(255, 27, 217);
+   
+} 
 .navbar a::after{
     content: '';
     position: absolute;
@@ -52,7 +56,7 @@ nav a:hover{
     bottom: 0;
     width: 100%;
     height: 2px;
-    background-color: rgb(214, 33, 33);
+    background-color: rgb(228, 0, 216);
     transform: scaleX(0);
     transition: transform 0.3s ease;
     transform-origin: bottom right;
@@ -61,4 +65,47 @@ nav a:hover{
 .navbar a:hover::after{
     transform: scaleX(1);
     transform: bottom left;
-}
+} 
+
+/* Mobile Layout */
+ @media (max-width: 768px) { 
+    nav {
+      flex-direction: column;
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: 100%;
+      height: 100vh;
+      background-color: rgba(236, 236, 236, 0.226);
+      backdrop-filter: blur(10px);
+      transform: translateX(100%);
+      transition: transform 0.3s ease-in-out;
+    }
+  
+    nav.active {
+      transform: translateX(0);
+    }
+  
+    /* Hamburger Menu */
+    .hamburger-menu {
+      display: block;
+      cursor: pointer;
+    }
+  
+    /* Hide navigation by default */
+    nav ul {
+      display: none;
+    }
+  
+    nav.active ul {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 20px;
+    }
+  }
+  
+  /* Tablet Layout */
+  @media (min-width: 769px) and (max-width: 1024px) {
+    /* Adjust font size and spacing as needed */
+  }
