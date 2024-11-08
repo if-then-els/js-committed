@@ -11,8 +11,8 @@ nav{
      display: flex;
     flex-direction: row;
     color: rgb(255, 255, 255);
-     background-color: rgba(236, 236, 236, 0.226);
-   backdrop-filter: blur(10px);
+     background-color: rgba(255, 255, 255, 0.178);
+   backdrop-filter: blur(10px); 
     padding: 10px;
     justify-content: right; 
     list-style-type: none;
@@ -68,7 +68,7 @@ nav a:hover{
 } 
 
 /* Mobile Layout */
- @media (max-width: 768px) { 
+ @media (max-width: 1200px) { 
     nav {
       flex-direction: column;
       position: absolute;
@@ -107,5 +107,5 @@ nav a:hover{
   
   /* Tablet Layout */
   @media (min-width: 769px) and (max-width: 1024px) {
-    /* Adjust font size and spacing as needed */
-  }
+   
+  } 

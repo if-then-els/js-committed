@@ -61,7 +61,7 @@
 
     <!-- Contact Form -->
      <section class="contact">
-        <form action="">
+        <form action="" id="contactForm">
             <input type="email" name="email" id="email" placeholder="Enter Your Email">
             <input type="tel" name="phone" id="phone" placeholder="Your Phone Number">
             <input type="text" name="Name" id="Name" placeholder="Enter Your Name">
@@ -96,5 +96,12 @@
     </div>
     </footer>
 </section>
+<script src="">
+    //javascript to handle form submission
+    document.getElementById('contactForm').addEventListener("submit", async function(event){
+        event.preventDefault();
+    })
+</script>
 </body>
 </html>
+

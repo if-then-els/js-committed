@@ -11,6 +11,7 @@
 </head>
 
 <body>
+    <button id="menu">Menu</button>
     <nav>
         <ul class="navbar">
             <li><a href="">Home</a></li>
@@ -54,7 +55,14 @@
 
   
 
+<script>
+    const hamburgerMenu = document.getElementById("menu");
+const navbar = document.querySelector('nav');
 
+hamburgerMenu.addEventListener('click', () => {
+  navbar.classList.toggle('active');
+});
+</script>
 
 </body>
 
